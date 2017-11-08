@@ -1,0 +1,31 @@
+page-alarm {
+
+}
+
+.alarm-content .title{
+    position:absolute;
+    top:15px;
+    left:50%;
+    margin-left:-20px;
+    font-size:18px;
+}
+
+.alarm-content p{
+    margin-top:10%;
+    font-size:12px;
+    color: #ccc;
+}
+.alarm-content .datetime-ios{
+    padding:0;
+}
+.alarm-content .repeat{
+    overflow: scroll;
+}
+.alarm-content .week{
+    margin-right:16px;
+}
+@media only screen and (max-width:340px){
+    .alarm-content .week{
+        margin-right:6px;
+    }
+}

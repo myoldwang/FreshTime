@@ -1,0 +1,22 @@
+<ion-menu [content]="content">
+  <ion-content class="menu_content">
+      <ion-list>
+          <ion-item>
+              <ion-icon name="logo-android" item-start></ion-icon>
+              我的设备
+              <p>name:{{name}}</p>
+              <p>battery:87%</p>
+              <p>ID:4930u23023</p>
+          </ion-item>
+          <ion-item *ngFor="let p of pages" (click)="openPage(p)">
+              <ion-icon name="{{p.start_icon}}" item-start light></ion-icon>
+                  {{p.title}}
+                 <!-- <ion-badge item-end>{{p.description}}</ion-badge>-->
+              <button icon-only ion-button clear item-end color="light">
+                  <ion-icon name="{{p.end_icon}}"></ion-icon>
+              </button>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

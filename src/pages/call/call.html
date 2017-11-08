@@ -1,0 +1,21 @@
+<!--
+  Generated template for the CallPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content class="call-content">
+    <ion-header>
+        <button ion-button icon-only clear color="light" (click)="call_back_home()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+        <h5 class="title" text-center>本地设备访问</h5>
+    </ion-header>
+    <button ion-button class="call" (click)="callup()">唤起手机联系人</button>
+    <button ion-button  class="pull" (click)="initJPush()">启动推送</button>
+    <button ion-button  class="pull" (click)="call_camera()">唤起相机</button>
+    <button ion-button class="pull" (click)="call_vibration()">振动设备1s</button>
+    <button ion-button class="pull" (click)="call_badge()">设备角标为2</button>
+    <button ion-button class="pull" (click)="clear_badge()">清除角标</button>
+    <img src="{{img_src}}" />
+</ion-content>

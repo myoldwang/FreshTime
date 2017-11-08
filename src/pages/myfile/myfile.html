@@ -1,0 +1,69 @@
+<!--
+  Generated template for the MyfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content class="myfile_content">
+    <button ion-button icon-only menuToggle color="light" clear icon-start class="toggle">
+        <ion-icon name="menu" class="menuToggle"></ion-icon>
+    </button>
+    <h4 class="title" margin-top text-center>个人信息输入</h4>
+    <span class="done" clear color="light" (click)="toHomePage(username)">完成</span>
+    <ion-list>
+        <ion-item>
+            <ion-label>昵称：</ion-label>
+            <ion-input type="text" clearInput="true" #username></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>性别</ion-label>
+            <ion-select [(ngModel)]="gender" cancelText="取消" okText="完成">
+                <ion-option value="f">男</ion-option>
+                <ion-option value="m">女</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>年龄</ion-label>
+            <ion-datetime displayFormat="mm" minuteValues="{{age}}" cancelText="取消" doneText="完成"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <span item-start>身高</span>
+            <ion-range min="100" max="200" [(ngModel)]="person_height" color="secondary" item-content>
+                <ion-label range-left>100</ion-label>
+                <ion-label range-right>200</ion-label>
+            </ion-range>
+            <span item-end>{{person_height}}cm</span>
+        </ion-item>
+        <ion-item>
+            <span item-start>体重</span>
+            <ion-range min="20" max="120" [(ngModel)]="person_weight" color="secondary" item-content>
+                <ion-label range-left>20</ion-label>
+                <ion-label range-right>120</ion-label>
+            </ion-range>
+            <span item-end>{{person_weight}}kg</span>
+        </ion-item>
+        <ion-item>
+            <span item-start>步数目标</span>
+            <span item-content>{{person_step_goal}}步</span>
+        </ion-item>
+        <ion-item>
+            <ion-range min="3000" max="30000" step="1000" snaps="true" color="secondary" [(ngModel)]="person_step_goal">
+                <ion-label range-left>3000</ion-label>
+                <ion-label range-right>30000</ion-label>
+            </ion-range>
+        </ion-item>
+        <ion-item>
+            <span item-start>睡眠目标</span>
+            <span item-content>{{person_sleep_goal}}小时</span>
+        </ion-item>
+        <ion-item>
+            <ion-range min="5" max="11" snaps="true" color="secondary" [(ngModel)]="person_sleep_goal">
+                <ion-label range-left>5</ion-label>
+                <ion-label range-right>11</ion-label>
+            </ion-range>
+        </ion-item>
+    </ion-list>
+</ion-content>
+

@@ -1,0 +1,28 @@
+page-login {
+
+}
+.login-content{
+    background:linear-gradient(rgb(31,160,138),rgb(88,141,174))
+}
+.login-content img{
+    width:50%;
+    display:block;
+    margin:5% auto 10%;
+    border-radius:50%;
+    overflow:hidden;
+}
+.button-full-ios{
+    border-radius:20px;
+}
+.login-content .button-ios{
+    padding:0 2em;
+}
+.login-content ion-item{
+    background:none;
+}
+.login-content .item-ios{
+    color:#fff;
+}
+.login-content p{
+    color:#fff;
+}

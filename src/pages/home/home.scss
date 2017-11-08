@@ -1,0 +1,82 @@
+page-hello-ionic {
+
+}
+.home-content{
+    /*background:linear-gradient(left top,rgb(3,108,138),rgb(0,134,107)); 晚上*/
+    background:linear-gradient(to bottom,rgba(4,143,182,1),rgba(0,192,153,1));
+    color:#fff;
+}
+h3{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+.home-content .home-slides{
+    margin-top:50px;
+}
+.home-content .toolbar-ios{
+    padding:10px;
+}
+.home-content .toolbar-title-ios{
+    color:#fff;
+}
+.home-content .title{
+    position:absolute;
+    top:15px;
+    left:50%;
+    margin-left:-40px;
+    font-size:18px;
+}
+.home-content p{
+    text-align:center;
+}
+.progress{
+    position:relative;
+    height:250px;
+}
+.progress .in_progress{
+    position:absolute;
+    left:50%;
+    margin-left:-66px;
+    top:55px;
+}
+.progress .steps span:nth-child(1){
+    font-size:40px;
+    color:#f0ff00;
+}
+.progress .steps span:nth-child(2){
+    font-size:20px;
+}
+.progress .line{
+    position:relative;
+    margin:5px 0;
+    left:-8%;
+    width:150px;
+    height:2px;
+    background:#7ef51f;
+}
+.progress .goal{
+    font-size:16px;
+    margin-left:-15px;
+}
+.progress .tip{
+    margin-left:-10px;
+    margin-top:5px;
+    width:154px;
+    text-align:center;
+    font-size:15px;
+}
+.home-content .description{
+    border:1px solid #fff;
+    border-right:none;
+    font-size:14px;
+}
+.home-content .description:last-child{
+    border-right:1px solid #fff;
+}
+.home-content .day-icon{
+    border-bottom:1px solid #c1c6cc;
+}
+.home-content ion-slides{
+    height:580px;
+}

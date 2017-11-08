@@ -1,0 +1,91 @@
+
+<ion-content class="home-content">
+    <ion-header>
+        <button ion-button icon-only menuToggle color="light" clear icon-start>
+            <ion-icon name="menu" class="menuToggle"></ion-icon>
+        </button>
+        <ion-title>FreshTime</ion-title>
+    </ion-header>
+    <ion-slides  pager="true" class="home-slides">
+        <ion-slide>
+            <h3>今日步数</h3>
+            <p>{{date|date:'yyyy-MM-dd'}}</p>
+            <div class="progress">
+               <step-progress></step-progress>
+               <div class="in_progress">
+                   <div class="steps">
+                       <span>8000</span>
+                       <span>步</span>
+                   </div>
+                   <div class="line"></div>
+                   <div class="goal">目标{{person_step_goal}}步</div>
+                   <div class="tip">
+                       今日目标还未完成，继续加油！
+                   </div>
+               </div>
+            </div>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 class="description">
+                        距离：3km
+                    </ion-col>
+                    <ion-col col-4 class="description">
+                        卡路里：300千卡
+                    </ion-col>
+                    <ion-col col-4 class="description">
+                        运动时长：3小时
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-12 class="day-icon">
+                        <button ion-button icon-only clear color="light" float-left>
+                            <ion-icon  name="ios-sunny-outline" start></ion-icon>
+                            白天
+                        </button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <step-chart></step-chart>
+        </ion-slide>
+        <ion-slide>
+            <h3>今日睡眠</h3>
+            <p>{{this.date|date:'yyyy-MM-dd'}}</p>
+            <div class="progress">
+                <step-progress></step-progress>
+                <div class="in_progress">
+                    <div class="steps">
+                        <span>8000</span>
+                        <span>步</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="goal">目标{{person_sleep_goal}}小时</div>
+                    <div class="tip">
+                      今日目标还未完成，继续加油！
+                    </div>
+                </div>
+            </div>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 class="description">
+                        醒着：38m
+                    </ion-col>
+                    <ion-col col-4 class="description">
+                        浅睡：1h38m
+                    </ion-col>
+                    <ion-col col-4 class="description">
+                        深睡：6h30m
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-12 class="day-icon">
+                        <button ion-button icon-only clear color="light" float-left>
+                            <ion-icon name="ios-moon-outline"></ion-icon>
+                            夜晚
+                        </button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <step-chart></step-chart>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

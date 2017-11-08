@@ -1,0 +1,29 @@
+page-update {
+
+}
+.update-content{
+    background:#0294c5;
+    color:#fff;
+}
+.update-content .update-img{
+    display:block;
+    margin:10% auto;
+}
+.update-content .progress-out{
+    width:200px;
+    height:10px;
+    margin:40% auto 0;
+    border:1px solid #ccc;
+    border-radius:10px;
+    position:relative;
+}
+.update-content .progress-in{
+    position:absolute;
+    left:0;
+    top:0;
+    width:150px;
+    height:8px;
+    margin:0 auto;
+    background:#2ec95c;
+    border-radius: 10px;
+}

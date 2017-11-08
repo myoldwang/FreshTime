@@ -1,0 +1,27 @@
+page-tutorial {
+
+}
+.skip{
+    position:absolute;
+    top:11px;
+    right:11px;
+    z-index:100;
+}
+p{
+    margin:0;
+    text-align:left;
+    font-size:16px;
+}
+.slide-zoom{
+    height:100%;
+}
+.start{
+    background:#fd6c95;
+    width:180px;
+    font-weight:bold;
+}
+.bg{
+    height:11%;
+    margin-top:-5px;
+    background:#1eb4e1;
+}
